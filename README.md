@@ -1,10 +1,10 @@
-# Ellvin Energy React
+# Saffron EcoPower
 
 A production-ready React website converted from an existing HTML landing page.
 
 ## Project Overview
 
-Ellvin Energy React is a Vite + React 19 application with Tailwind CSS styling, React Router navigation, and a floating AI chat widget.
+Saffron EcoPower is a Vite + React 19 application with Tailwind CSS styling, React Router navigation, and a floating AI chat widget.
 
 ## Features
 
@@ -80,3 +80,4 @@ npm run format
 - If styling is missing, verify `tailwind.config.js` content paths.
 - If import errors occur, confirm file names and component paths.
 - Run `npm install` again if packages are missing.
+# Saffron-EcoPower
