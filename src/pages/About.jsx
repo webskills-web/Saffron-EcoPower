@@ -2,9 +2,9 @@ function About() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <div className="rounded-[32px] bg-slate-50 p-10 shadow-soft">
-        <h1 className="text-4xl font-extrabold text-slate-950">About Ellvin Energy</h1>
+        <h1 className="text-4xl font-extrabold text-slate-950">About Saffron EcoPower</h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-          Ellvin Energy delivers renewable solar energy solutions for homes, businesses, and industries across India. We are committed to predictable financing, long-term reliability, and simplified usage.
+          Saffron EcoPower delivers renewable solar energy solutions for homes, businesses, and industries across India. We are committed to predictable financing, long-term reliability, and simplified usage.
         </p>
         <div className="mt-10 grid gap-8 lg:grid-cols-3">
           {[

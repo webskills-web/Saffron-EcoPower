@@ -1,6 +1,7 @@
 import { useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMessageSquare, FiSend, FiX, FiChevronDown } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa';
 import { ChatContext } from '../../context/ChatContext.jsx';
 
 function AIChatWidget() {
@@ -21,9 +22,28 @@ function AIChatWidget() {
     setIsTyping(true);
 
     setTimeout(() => {
-      addMessage({ id: Date.now() + 1, sender: 'bot', text: 'Thanks for reaching out! Our team will follow up shortly.' });
+      addMessage({ id: Date.now() + 1, sender: 'bot', text: 'Thanks for reaching out! Our team will follow up shortly by phone or email.' });
       setIsTyping(false);
     }, 1200);
+  };
+
+  const handleWhatsAppSend = () => {
+    if (!draft.trim()) return;
+    const phone = '917893996527';
+    const text = draft.trim();
+    // Open WhatsApp chat in a new tab
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+
+    // Add the message locally so the chat UI reflects the sent message
+    addMessage({ id: Date.now(), sender: 'user', text });
+    setDraft('');
+    setIsTyping(true);
+
+    setTimeout(() => {
+      addMessage({ id: Date.now() + 1, sender: 'bot', text: 'Thanks — we opened WhatsApp to send your message. Our team will follow up there or by phone/email.' });
+      setIsTyping(false);
+    }, 900);
   };
 
   const chatButtonLabel = useMemo(() => (isOpen ? 'Close' : 'Chat'), [isOpen]);
@@ -43,7 +63,8 @@ function AIChatWidget() {
               <div className="flex items-center justify-between gap-3">
                 <div>
                   <p className="text-sm uppercase tracking-[0.2em] opacity-90">AI Support</p>
-                  <h3 className="mt-2 text-lg font-semibold">Chat with Ellvin</h3>
+                  <h3 className="mt-2 text-lg font-semibold">Chat with EcoPower</h3>
+                  <p className="mt-1 text-xs text-slate-200">Type your question and our support team will follow up by phone or email.</p>
                 </div>
                 <button type="button" onClick={toggleOpen} className="rounded-full bg-white/10 p-2 text-white transition hover:bg-white/20">
                   <FiX size={18} />
@@ -79,6 +100,14 @@ function AIChatWidget() {
                     placeholder="Type a message..."
                     className="flex-1 rounded-3xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
                   />
+                  <button
+                    type="button"
+                    onClick={handleWhatsAppSend}
+                    title="Send via WhatsApp"
+                    className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 text-white transition hover:bg-emerald-600"
+                  >
+                    <FaWhatsapp size={18} />
+                  </button>
                   <button
                     type="button"
                     onClick={handleSend}

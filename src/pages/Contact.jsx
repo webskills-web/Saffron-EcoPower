@@ -23,8 +23,8 @@ function Contact() {
             Fill in your details and our team will get back to you shortly.
           </p>
           <div className="mt-10 space-y-4 text-sm text-slate-700">
-            <p>📞 <strong className="text-slate-900">+91 94677 29999</strong></p>
-            <p>✉️ info@ellvinenergy.com</p>
+            <p>📞 <strong className="text-slate-900">+91 78939 96527</strong></p>
+            <p>✉️ info@saffronecopower.com</p>
             <p>3rd Floor, Next Space Building, NH-Service Road, Kunchanapalli Village, Tadepalli, Guntur Dist, A.P – 522501</p>
           </div>
         </div>

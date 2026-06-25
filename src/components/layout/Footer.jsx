@@ -14,14 +14,14 @@ function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:px-8 lg:grid-cols-4">
         <div>
           <div className="mb-4 text-2xl font-extrabold tracking-tight text-white">
-            ⚡ Ellvin<span className="text-accent">Energy</span>
+            ⚡ Saffron<span className="text-accent">EcoPower</span>
           </div>
           <p className="max-w-sm text-sm leading-7 text-slate-400">
-            Empowering India with clean, renewable solar energy solutions for homes, businesses, and industries.
+            Empowering with sustainable solar energy solutions for homes, businesses, and industries.
           </p>
           <div className="mt-6 space-y-2 text-sm text-slate-400">
-            <div>📞 <span className="font-semibold text-white">+91 94677 29999</span></div>
-            <div>✉️ info@ellvinenergy.com</div>
+            <div>📞 <span className="font-semibold text-white">+91 78939 96527</span></div>
+            <div>✉️ info@saffronecopower.com</div>
             <div>3rd Floor, Next Space Building, NH-Service Road, Kunchanapalli Village, Tadepalli, Guntur Dist, A.P – 522501</div>
           </div>
         </div>
@@ -62,7 +62,7 @@ function Footer() {
         <div>
           <h3 className="mb-6 text-sm font-semibold uppercase tracking-[0.2em] text-slate-400">Newsletter</h3>
           <p className="mb-6 max-w-xs text-sm leading-7 text-slate-400">
-            Get the latest news and offers from Ellvin Energy in your inbox.
+            Get the latest news and offers from Saffron EcoPower in your inbox.
           </p>
           <form className="space-y-3">
             <input
@@ -77,7 +77,7 @@ function Footer() {
         </div>
       </div>
       <div className="border-t border-slate-800 px-4 py-6 text-center text-xs text-slate-500 sm:px-6 lg:px-8">
-        Copyright © 2025 Ellvin Energy, All Rights Reserved.
+        Copyright © 2026 Saffron EcoPower, All Rights Reserved.
       </div>
     </footer>
   );

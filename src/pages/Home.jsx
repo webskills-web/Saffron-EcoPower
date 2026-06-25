@@ -18,17 +18,17 @@ const benefits = [
 ];
 
 const workflow = [
-  { title: 'Book a Free Consultation', description: 'Talk to our solar experts and discuss your energy needs.', image: 'https://ellvinenergy.com/wp-content/uploads/2025/07/happy-business-people-working-together.webp' },
-  { title: 'Review Proposal', description: 'Get a detailed, transparent proposal tailored to your site.', image: 'https://ellvinenergy.com/wp-content/uploads/2025/07/person-office-analyzing.webp' },
-  { title: 'Track Project Installation', description: 'Our certified team handles the entire installation process.', image: 'https://ellvinenergy.com/wp-content/uploads/2025/07/man-with-white-helmet-near-solar-panel.webp' },
-  { title: 'Make it Happen', description: 'Go live, start saving, and monitor your system in real-time.', image: 'https://ellvinenergy.com/wp-content/uploads/2025/07/Solar-Residential-Rooftops-re-img.webp' },
+  { title: 'Book a Free Consultation', description: 'Talk to our solar experts and discuss your energy needs.', image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80' },
+  { title: 'Review Proposal', description: 'Get a detailed, transparent proposal tailored to your site.', image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80' },
+  { title: 'Track Project Installation', description: 'Our certified team handles the entire installation process.', image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1200&q=80' },
+  { title: 'Make it Happen', description: 'Go live, start saving, and monitor your system in real-time.', image: 'https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80' },
 ];
 
 function Home() {
   return (
     <div>
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-900/95 to-primary px-4 py-20 text-white sm:px-6 lg:px-8">
-        <div className="absolute inset-0 bg-[url('https://ellvinenergy.com/wp-content/uploads/2025/06/solar-panel.webp')] bg-center bg-cover opacity-10" />
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1200&q=80')] bg-center bg-cover opacity-10" />
         <div className="relative mx-auto max-w-7xl">
           <div className="max-w-2xl">
             <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.26em] text-white/90">
@@ -97,7 +97,7 @@ function Home() {
       <section id="services" className="px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-primary">Ellvin Energy</p>
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-primary">Saffron EcoPower</p>
             <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">
               Best Solution for <strong className="text-primary">Your Home Service</strong>
             </h2>
@@ -108,7 +108,7 @@ function Home() {
           <div className="mt-12 grid gap-8 lg:grid-cols-2">
             <div className="group relative overflow-hidden rounded-[32px] bg-slate-950 shadow-soft">
               <img
-                src="https://ellvinenergy.com/wp-content/uploads/2022/04/data-all1.jpg"
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80"
                 alt="Solar Rooftops"
                 className="h-96 w-full object-cover transition duration-500 group-hover:scale-105"
               />
@@ -121,8 +121,11 @@ function Home() {
             </div>
             <div className="group relative overflow-hidden rounded-[32px] bg-slate-950 shadow-soft">
               <img
-                src="https://ellvinenergy.com/wp-content/uploads/2022/04/cspt-progressbar-single.jpg"
+                src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1200&q=80"
                 alt="Commercial Solar"
+                onError={(event) => {
+                  event.currentTarget.src = 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1200&q=80';
+                }}
                 className="h-96 w-full object-cover transition duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent p-8 flex items-end">
@@ -196,7 +199,7 @@ function Home() {
       <section className="bg-slate-50 px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2">
           <div>
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-primary">Ellvin Energy</p>
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-primary">Saffron EcoPower</p>
             <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">PM Surya Ghar: Muft Bijli Yojana</h2>
             <p className="mt-6 text-base leading-8 text-slate-600">
               In order to further sustainable development and people's well-being, we are supporting the PM Surya Ghar: Muft Bijli Yojana. This project, with an investment of over ₹75,000 crores, aims to light up 1 crore households by providing up to 300 units of free electricity every month.
@@ -205,13 +208,13 @@ function Home() {
               <a href="#" className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-primaryDark">
                 Apply Now
               </a>
-              <a href="https://ellvinenergy.com/wp-content/uploads/2025/08/Ellvin-Energy-Brochure-Final-1.pdf" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-full border border-primary bg-white px-6 py-3 text-sm font-semibold text-primary transition hover:bg-primary/10">
+              <a href="#" className="inline-flex items-center justify-center rounded-full border border-primary bg-white px-6 py-3 text-sm font-semibold text-primary transition hover:bg-primary/10">
                 Download Brochure
               </a>
             </div>
           </div>
           <div className="overflow-hidden rounded-[32px] bg-white shadow-soft">
-            <img src="https://ellvinenergy.com/wp-content/uploads/2025/07/EE.png" alt="PM Surya Ghar Yojana" className="h-full w-full object-cover" />
+            <img src="https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=1200&q=80" alt="PM Surya Ghar Yojana" className="h-full w-full object-cover" />
           </div>
         </div>
       </section>
@@ -219,13 +222,13 @@ function Home() {
       <section className="px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.3em] text-primary">Ellvin Energy</p>
+            <p className="text-sm font-bold uppercase tracking-[0.3em] text-primary">Saffron EcoPower</p>
             <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">PM Surya Ghar: <strong className="text-primary">News Insights</strong></h2>
           </div>
           <div className="mt-12 grid gap-8 lg:grid-cols-3">
-            {['PM Surya Ghar Yojana 2026: Benefits & How to Apply', 'The Future of Clean Energy in India: Why Solar Is Smart in 2026', 'From Design to Maintenance: Installing Commercial Solar With Ellvin Energy'].map((title, index) => (
+            {['PM Surya Ghar Yojana 2026: Benefits & How to Apply', 'The Future of Clean Energy in India: Why Solar Is Smart in 2026', 'From Design to Maintenance: Installing Commercial Solar With Saffron EcoPower'].map((title, index) => (
               <article key={title} className="overflow-hidden rounded-[32px] bg-white shadow-soft transition hover:-translate-y-1">
-                <img src={`https://ellvinenergy.com/wp-content/uploads/2026/02/${index === 2 ? 'solarinstallation.jpg' : index === 1 ? 'Blog-Image-1.jpg.jpeg' : 'PM-Surya-Ghar-Yojana-770x500.jpg'}`} alt={title} className="h-60 w-full object-cover" />
+                <img src={`https://images.unsplash.com/photo-1538095739977-00fbc3d69a1a?auto=format&fit=crop&w=1200&q=80`} alt={title} className="h-60 w-full object-cover" />
                 <div className="p-6">
                   <div className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Blog · 11 Feb, 2026</div>
                   <h3 className="mt-4 text-xl font-semibold text-slate-950">{title}</h3>

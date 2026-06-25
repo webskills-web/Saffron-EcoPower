@@ -20,7 +20,7 @@ function Blog() {
             date: 'Feb 11, 2026',
           },
           {
-            title: 'From Design to Maintenance: Installing Commercial Solar With Ellvin Energy',
+            title: 'From Design to Maintenance: Installing Commercial Solar With Saffron EcoPower',
             date: 'Feb 11, 2026',
           },
         ].map((post) => (

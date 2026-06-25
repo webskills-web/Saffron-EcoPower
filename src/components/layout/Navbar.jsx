@@ -19,7 +19,7 @@ function Navbar() {
     <header className="sticky top-0 z-30 bg-white shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="text-2xl font-extrabold tracking-tight text-primary">
-          ⚡ Ellvin<span className="text-accent">Energy</span>
+          ⚡ Saffron<span className="text-accent">EcoPower</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -39,8 +39,8 @@ function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a href="tel:+919467729999" className="hidden rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-primaryDark md:inline-block">
-            📞 94677 29999
+          <a href="tel:+917893996527" className="hidden rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-primaryDark md:inline-block">
+            📞 78939 96527
           </a>
           <button
             type="button"
@@ -70,8 +70,8 @@ function Navbar() {
                 {link.label}
               </NavLink>
             ))}
-            <a href="tel:+919467729999" className="block rounded-2xl bg-primary px-4 py-3 text-center text-sm font-semibold text-white transition hover:bg-primaryDark">
-              📞 94677 29999
+            <a href="tel:+917893996527" className="block rounded-2xl bg-primary px-4 py-3 text-center text-sm font-semibold text-white transition hover:bg-primaryDark">
+              📞 78939 96527
             </a>
           </div>
         </div>

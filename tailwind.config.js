@@ -3,12 +3,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#318f2c',
-        primaryDark: '#236320',
-        primaryLight: '#e8f5e3',
-        accent: '#f5a623',
-        surface: '#f7faf6',
-        border: '#e2e8df',
+        primary: '#f59e0b',
+        primaryDark: '#b45309',
+        primaryLight: '#fde68a',
+        accent: '#0f766e',
+        surface: '#fffbeb',
+        border: '#fde68a',
       },
       boxShadow: {
         soft: '0 12px 40px rgba(0, 0, 0, 0.08)',

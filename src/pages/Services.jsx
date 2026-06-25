@@ -4,22 +4,22 @@ const serviceList = [
   {
     title: 'Residential Solar Rooftops',
     description: 'Tailored rooftop systems for homes with guaranteed performance monitoring.',
-    image: 'https://ellvinenergy.com/wp-content/uploads/2022/04/data-all1.jpg',
+    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
   },
   {
     title: 'Commercial Solar Rooftops',
     description: 'Scalable solar solutions for businesses and industrial facilities.',
-    image: 'https://ellvinenergy.com/wp-content/uploads/2022/04/cspt-progressbar-single.jpg',
+    image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1200&q=80',
   },
   {
     title: 'End-to-End Installation',
     description: 'Full-service project delivery from design through commissioning.',
-    image: 'https://ellvinenergy.com/wp-content/uploads/2025/07/man-with-white-helmet-near-solar-panel.webp',
+    image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1200&q=80',
   },
   {
     title: 'Monitoring & Maintenance',
     description: '24x7 monitoring and proactive maintenance for long-term uptime.',
-    image: 'https://ellvinenergy.com/wp-content/uploads/2025/07/person-office-analyzing.webp',
+    image: 'https://images.unsplash.com/photo-1517976487492-5750f3195933?auto=format&fit=crop&w=1200&q=80',
   },
 ];
 
@@ -45,7 +45,14 @@ function Services() {
             className="group overflow-hidden rounded-[32px] bg-white shadow-soft"
           >
             <div className="h-80 overflow-hidden">
-              <img src={service.image} alt={service.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+              <img
+                src={service.image}
+                alt={service.title}
+                onError={(event) => {
+                  event.currentTarget.src = 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1200&q=80';
+                }}
+                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              />
             </div>
             <div className="p-8">
               <h2 className="text-2xl font-semibold text-slate-950">{service.title}</h2>

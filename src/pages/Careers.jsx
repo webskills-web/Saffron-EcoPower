@@ -4,7 +4,7 @@ function Careers() {
       <div className="rounded-[32px] bg-slate-50 p-10 shadow-soft">
         <h1 className="text-4xl font-extrabold text-slate-950">Careers</h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-          Join the Ellvin Energy team to help drive India’s transition to sustainable solar energy.
+          Join the Saffron EcoPower team to help drive India’s transition to sustainable solar energy.
         </p>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {[

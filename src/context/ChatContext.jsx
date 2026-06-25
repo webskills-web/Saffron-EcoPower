@@ -4,7 +4,11 @@ export const ChatContext = createContext(null);
 
 export function ChatProvider({ children }) {
   const [messages, setMessages] = useState([
-    { id: 1, sender: 'bot', text: 'Hi there! How can I help you today?' },
+    {
+      id: 1,
+      sender: 'bot',
+      text: 'Hi there! This is a support chat for Saffron EcoPower. Send your inquiry and our team will follow up by phone or email.',
+    },
   ]);
   const [isOpen, setIsOpen] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
